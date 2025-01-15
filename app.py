@@ -76,7 +76,7 @@ if st.button("Analyze"):
         sentiment_prediction = torch.argmax(outputs, dim=1).item()
         sentiment = LABEL_MAPPING[sentiment_prediction]
 
-        # Emotion Analysis
+        # Emotions Analysis
         emotions = emotion_analyzer.analyze(user_input)
 
         # Display Sentiment Results
