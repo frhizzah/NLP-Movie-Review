@@ -86,7 +86,7 @@ if st.button("Analyze"):
 
         # Display Emotion Results
         st.subheader("Emotion Detection")
-        st.write("Top 5 emotions detected:")
+        #st.write("Top 5 emotions detected:")
         for emotion, score in list(emotions.items())[:5]:
             st.write(f"{emotion.capitalize()}: {score * 100:.2f}%")
     else:
